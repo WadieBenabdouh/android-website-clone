@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+// CUSTOM VARIABLE
+$page-padding: 1em 1.5em;
+
+// CUSTOM VARIABLE END
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+// -------- HEADER -------- //
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1.5em;
+    position: relative;
+
+    .left,
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .left {
+
+        button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+        }
+    }
+
+    .right {
+
+        button {
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #208ee7;
+            padding: 10px;
+
+            &:hover {
+                background-color: hsl(218.2, 91.7%, 95.3%);
+                border-radius: 5px;
+
+            }
+        }
+    }
+
+}
+
+// -------- MOBILE NAV -------- //
+.mobile-nav {
+    // display: none;
+    // opacity: 0.5;
+    background-color: burlywood;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 65%;
+    padding: 1.4em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    .top {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        gap: 1em;
+        border-bottom: 1px solid gray;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+
+        button {
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            color: gray;
+        }
+    }
+
+    .essentials {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.5em;
+        gap: .5em;
+        border-bottom: 1px solid gray;
+        padding-bottom: 1em;
+
+        .more {
+
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
