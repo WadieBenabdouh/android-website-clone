@@ -24,7 +24,7 @@ header {
     align-items: center;
     padding: 0em 1.5em;
     position: relative;
-    gap: 1em;
+    gap: 2em;
     height: 4em;
 
     button {
@@ -71,15 +71,39 @@ header {
     .search-wrapper {
         display: none;
 
-        input {
-            padding: 5px;
+
+        .fa-magnifying-glass {
+            position: absolute;
+            left: 5.5em;
+            bottom: 20px;
+            z-index: 10;
         }
+
+        input {
+            padding: 10px;
+            padding-left: 3em;
+            position: relative;
+            width: 100%;
+            background-color: #dadce052;
+            border: none;
+
+            &::placeholder {
+                font-weight: bold;
+
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+
     }
 
     .search-wrapper.active {
-        display: block;
-        margin-right: 5em;
-        width: 70%;
+        display: flex;
+        gap: 1em;
+        width: 100%;
     }
 
     .left.active,
