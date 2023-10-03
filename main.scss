@@ -160,7 +160,7 @@ header {
     top: 0;
     left: -100%;
     border-right: solid 1px rgba(0, 0, 0, 0.521);
-    transition: all 0.2s;
+    transition: all 0.3s;
     font-size: 14px;
 
     .top {
@@ -186,8 +186,6 @@ header {
                 cursor: pointer;
             }
         }
-
-        #backBtn {}
     }
 
     .essentials {
@@ -296,7 +294,7 @@ header {
 
 .mobile-nav.active {
     display: flex;
-    transition: all 0.2s;
+    transition: all 0.3s;
     left: 0%;
 }
 
@@ -313,7 +311,7 @@ header {
     border-right: solid 1px rgba(0, 0, 0, 0.521);
     position: absolute;
     top: 4em;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
 
     >ul {

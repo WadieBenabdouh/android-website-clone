@@ -1,5 +1,4 @@
 // HEADER OPENING x CLOSING
-
 let headerLeft = document.querySelector(".left")
 let headerRight = document.querySelector(".right")
 const searchField = document.querySelector(".search-wrapper")
@@ -18,7 +17,6 @@ closeSearchBtn.onclick = () => {
     headerRight.classList.remove("active")
     searchField.classList.remove("active")
 }
-
 // HEADER OPENING x CLOSING END
 
 
@@ -39,6 +37,7 @@ closeBurgerBtn.onclick = () => {
 }
 // BURGER MENU END
 
+
 // OPENING MORE 1> Essentials
 let essentialsTab = document.querySelector("#essentialsTab")
 let essentialsPage = document.querySelector(".essentials-page")
@@ -54,5 +53,4 @@ closeBurgerBtn.onclick = () => {
     essentialsPage.classList.remove("active")
     crossMark.className = ("fa-solid fa-xmark");
 }
-
 // OPENING MORE 1> Essentials END
