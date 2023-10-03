@@ -15,6 +15,11 @@ $page-padding: 1em 1.5em;
 body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
+    transition: all 0.3s; //pure perfect S.S.S trick
+}
+
+body.active {
+    background-color: #29272775;
 }
 
 // -------- HEADER -------- //
@@ -36,6 +41,7 @@ header {
         &:hover {
             background-color: rgb(219, 219, 219);
             border-radius: 50px;
+            cursor: pointer;
         }
     }
 
@@ -165,8 +171,9 @@ header {
             padding: 1px 4px;
 
             &:hover {
-                background-color: gray;
+                background-color: rgb(241, 239, 239);
                 border-radius: 50px;
+                cursor: pointer;
             }
         }
     }
