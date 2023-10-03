@@ -8,3 +8,13 @@ searchBtn.onclick = () => {
     headerRight.classList.toggle("active")
     searchField.classList.toggle("active")
 }
+
+//close search header
+
+let closeSearchBtn = document.querySelector("#closeSearchBtn")
+
+closeSearchBtn.onclick = () => {
+    headerLeft.classList.remove("active")
+    headerRight.classList.remove("active")
+    searchField.classList.remove("active")
+}
