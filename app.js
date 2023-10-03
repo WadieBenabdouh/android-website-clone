@@ -1,3 +1,5 @@
+// HEADER OPENING x CLOSING
+
 let headerLeft = document.querySelector(".left")
 let headerRight = document.querySelector(".right")
 const searchField = document.querySelector(".search-wrapper")
@@ -9,8 +11,6 @@ searchBtn.onclick = () => {
     searchField.classList.toggle("active")
 }
 
-//close search header
-
 let closeSearchBtn = document.querySelector("#closeSearchBtn")
 
 closeSearchBtn.onclick = () => {
@@ -18,3 +18,5 @@ closeSearchBtn.onclick = () => {
     headerRight.classList.remove("active")
     searchField.classList.remove("active")
 }
+
+// HEADER OPENING x CLOSING END

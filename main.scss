@@ -28,6 +28,7 @@ header {
     height: 4em;
 
     button {
+        //burgerMenu
         background: none;
         border: none;
         font-size: 1.2rem;
@@ -53,6 +54,10 @@ header {
             background: none;
             border: none;
             font-size: 1.1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         a {
@@ -70,6 +75,17 @@ header {
 
     .search-wrapper {
         display: none;
+
+        #closeSearchBtn {
+            background-color: #d5d7d8;
+            padding-inline: 10px;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: gray;
+                cursor: pointer;
+            }
+        }
 
 
         .fa-magnifying-glass {
