@@ -44,6 +44,8 @@ closeBurgerBtn.onclick = () => {
 let morePanelOne = document.querySelector("#openEssentialsMore")
 let essentialsPage = document.querySelector(".essentials-more")
 
+
 morePanelOne.onclick = () => {
     essentialsPage.classList.toggle("active")
+    crossBtn.classList.add(".fa-solid fa-arrow-left")
 }
