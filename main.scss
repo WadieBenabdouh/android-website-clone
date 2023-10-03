@@ -12,6 +12,14 @@ $page-padding: 1em 1.5em;
     box-sizing: border-box;
 }
 
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
@@ -31,6 +39,7 @@ header {
     position: relative;
     gap: 2em;
     height: 4em;
+    border-bottom: 1px solid gray;
 
     button {
         //burgerMenu
@@ -287,4 +296,39 @@ header {
     display: flex;
     transition: all 0.3s;
     left: 0%;
+}
+
+// LAYER 1>
+.essentials-more {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 65%;
+    padding: 1.4em 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-right: solid 1px rgba(0, 0, 0, 0.521);
+    position: absolute;
+    top: 4em;
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        // padding: 0 1.5em;
+        gap: 1em;
+        border-bottom: 1px solid gray;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        >* {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 1.5em;
+            width: 97%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
 }
