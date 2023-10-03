@@ -39,7 +39,7 @@ closeBurgerBtn.onclick = () => {
 }
 // BURGER MENU END
 
-// OPENING MORE 1
+// OPENING MORE 1> Essentials
 let essentialsTab = document.querySelector("#essentialsTab")
 let essentialsPage = document.querySelector(".essentials-page")
 const crossMark = document.querySelector("#cross-mark")
@@ -54,3 +54,5 @@ closeBurgerBtn.onclick = () => {
     essentialsPage.classList.remove("active")
     crossMark.className = ("fa-solid fa-xmark");
 }
+
+// OPENING MORE 1> Essentials END
