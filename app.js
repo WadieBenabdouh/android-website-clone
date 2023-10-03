@@ -37,12 +37,11 @@ closeBurgerBtn.onclick = () => {
     mobileNav.classList.remove("active")
     bodyOverlayDark.classList.remove("active")
 }
-
 // BURGER MENU END
 
 // OPENING MORE 1
-let morePanelOne = document.querySelector("#openEssentialsMore")
-let essentialsPage = document.querySelector(".essentials-more")
+let morePanelOne = document.querySelector("#essentialsTab")
+let essentialsPage = document.querySelector(".essentials-page")
 
 
 morePanelOne.onclick = () => {
