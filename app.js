@@ -40,11 +40,17 @@ closeBurgerBtn.onclick = () => {
 // BURGER MENU END
 
 // OPENING MORE 1
-let morePanelOne = document.querySelector("#essentialsTab")
+let essentialsTab = document.querySelector("#essentialsTab")
 let essentialsPage = document.querySelector(".essentials-page")
+const crossMark = document.querySelector("#cross-mark")
+const backBtn = document.querySelector("fa-arrow-left")
 
-
-morePanelOne.onclick = () => {
+essentialsTab.onclick = () => {
     essentialsPage.classList.toggle("active")
-    crossBtn.classList.add(".fa-solid fa-arrow-left")
+    crossMark.className = 'fa-solid fa-arrow-left';
+}
+
+closeBurgerBtn.onclick = () => {
+    essentialsPage.classList.remove("active")
+    crossMark.className = ("fa-solid fa-xmark");
 }
