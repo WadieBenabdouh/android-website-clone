@@ -51,6 +51,6 @@ essentialsTab.onclick = () => {
 
 closeBurgerBtn.onclick = () => {
     essentialsPage.classList.remove("active")
-    crossMark.className = ("fa-solid fa-xmark");
+    crossMark.className = "fa-solid fa-xmark";
 }
 // OPENING MORE 1> Essentials END
