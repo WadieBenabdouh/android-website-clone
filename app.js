@@ -1,4 +1,4 @@
-// HEADER OPENING x CLOSING
+// HEADER SEARCH OPENING x CLOSING
 let headerLeft = document.querySelector(".left")
 let headerRight = document.querySelector(".right")
 const searchField = document.querySelector(".search-wrapper")
@@ -23,7 +23,7 @@ closeSearchBtn.onclick = () => {
 // BURGER MENU
 const burgerMenuBtn = document.querySelector("#burgerMenuBtn")
 const mobileNav = document.querySelector(".mobile-nav")
-const closeBurgerBtn = document.querySelector("#closeBurger")
+const closeBurgerBtn = document.querySelector("#x-mark")
 const bodyOverlayDark = document.querySelector("body")
 
 burgerMenuBtn.onclick = () => {
@@ -39,18 +39,21 @@ closeBurgerBtn.onclick = () => {
 
 
 // OPENING MORE 1> Essentials
-let essentialsTab = document.querySelector("#essentialsTab")
-let essentialsPage = document.querySelector(".essentials-page")
-const crossMark = document.querySelector("#cross-mark")
-const backBtn = document.querySelector("fa-arrow-left")
+let essentialsTab = document.querySelector('#essentialsTab');
+let essentialsPage = document.querySelector('.essentials-page');
+let backBtn = document.querySelector(".fa-solid fa-arrow-left")
+
 
 essentialsTab.onclick = () => {
     essentialsPage.classList.toggle("active")
-    crossMark.className = 'fa-solid fa-arrow-left';
+    closeBurgerBtn.classList = 'fa-solid fa-arrow-left'
 }
 
 closeBurgerBtn.onclick = () => {
+    closeBurgerBtn.classList = 'fa-solid fa-xmark'
     essentialsPage.classList.remove("active")
-    crossMark.className = ("fa-solid fa-xmark");
+    // essentialsPage.classList.toggle("close")
+    mobileNav.classList.toggle("tabClose")
+    // mobileNav.classList.remove("active")
 }
 // OPENING MORE 1> Essentials END
