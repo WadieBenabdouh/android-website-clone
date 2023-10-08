@@ -488,9 +488,7 @@ article {
     margin-top: 1em;
     padding: 0 1.5em;
 
-    &:hover {
-        cursor: pointer;
-    }
+
 
     .tab {
         display: flex;
@@ -498,6 +496,12 @@ article {
         background-color: #d7effe;
         padding: 1em;
         gap: 2em;
+        transition: all 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 1px 10px 7px rgba(128, 128, 128, 0.397);
+        }
 
         img {
             max-width: 3.5em;
@@ -522,9 +526,11 @@ article {
         background-color: #d7effe;
         padding: 1em;
         gap: 2em;
+        transition: all 0.2s;
 
         &:hover {
             cursor: pointer;
+            box-shadow: 1px 10px 7px rgba(128, 128, 128, 0.397);
         }
 
 
