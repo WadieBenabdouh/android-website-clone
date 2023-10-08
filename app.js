@@ -41,11 +41,11 @@ closeBurgerBtn.onclick = () => {
 // OPENING MORE 1> Essentials
 let essentialsTab = document.querySelector('#essentialsTab')
 let essentialsPage = document.querySelector(".essentials-page")
-let backBtn = document.querySelector('.backBtn')
+let backBtn = document.querySelector('.backBtn-one')
 
 essentialsTab.onclick = () => {
-    essentialsPage.classList.toggle("active")
     backBtn.classList.toggle("active")
+    essentialsPage.classList.toggle("active")
     closeBurgerBtn.classList.toggle("active")
 }
 
@@ -55,3 +55,21 @@ backBtn.onclick = () => {
     closeBurgerBtn.classList.remove("active")
 }
 // OPENING MORE 1> Essentials END
+
+
+// OPENING MORE 2> Design
+let designTab = document.querySelector("#designTab")
+let designPage = document.querySelector(".design-page")
+let backBtnTwo = document.querySelector(".backBtn-two")
+
+designTab.onclick = () => {
+    designPage.classList.toggle("active")
+    backBtnTwo.classList.toggle("active")
+    closeBurgerBtn.classList.toggle("active")
+}
+
+backBtnTwo.onclick = () => {
+    designPage.classList.remove("active")
+    backBtnTwo.classList.remove("active")
+    closeBurgerBtn.classList.remove("active")
+}
