@@ -173,7 +173,7 @@ header {
         padding-bottom: 0.75em;
         padding-left: 1.5em;
 
-        i {
+        button {
             background: none;
             border: none;
             font-size: 1.3rem;
@@ -185,6 +185,18 @@ header {
                 border-radius: 50px;
                 cursor: pointer;
             }
+        }
+
+        .x-mark.active {
+            display: none;
+        }
+
+        .backBtn {
+            display: none;
+        }
+
+        .backBtn.active {
+            display: block;
         }
     }
 
@@ -298,10 +310,6 @@ header {
     left: 0%;
 }
 
-.mobile-nav.tabClose {
-    left: 0%;
-}
-
 // LAYER 1>
 .essentials-page {
     display: flex;
@@ -350,10 +358,6 @@ header {
 .essentials-page.active {
     left: 0;
     transition: all 0.2s;
-}
-
-.essentials-page.close {
-    left: -100%;
 }
 
 // -------- MOBILE NAV END-------- //

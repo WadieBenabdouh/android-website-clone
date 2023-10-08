@@ -23,7 +23,7 @@ closeSearchBtn.onclick = () => {
 // BURGER MENU
 const burgerMenuBtn = document.querySelector("#burgerMenuBtn")
 const mobileNav = document.querySelector(".mobile-nav")
-const closeBurgerBtn = document.querySelector("#x-mark")
+const closeBurgerBtn = document.querySelector(".x-mark")
 const bodyOverlayDark = document.querySelector("body")
 
 burgerMenuBtn.onclick = () => {
@@ -39,21 +39,20 @@ closeBurgerBtn.onclick = () => {
 
 
 // OPENING MORE 1> Essentials
-let essentialsTab = document.querySelector('#essentialsTab');
-let essentialsPage = document.querySelector('.essentials-page');
-let backBtn = document.querySelector(".fa-solid fa-arrow-left")
-
+let essentialsTab = document.querySelector('#essentialsTab')
+let essentialsPage = document.querySelector(".essentials-page")
+let backBtn = document.querySelector('.backBtn')
 
 essentialsTab.onclick = () => {
     essentialsPage.classList.toggle("active")
-    closeBurgerBtn.classList = 'fa-solid fa-arrow-left'
+    backBtn.classList.toggle("active")
+    closeBurgerBtn.classList.toggle("active")
 }
 
-closeBurgerBtn.onclick = () => {
-    closeBurgerBtn.classList = 'fa-solid fa-xmark'
+backBtn.onclick = () => {
     essentialsPage.classList.remove("active")
-    // essentialsPage.classList.toggle("close")
-    mobileNav.classList.toggle("tabClose")
-
+    backBtn.classList.remove("active")
+    closeBurgerBtn.classList.remove("active")
 }
+
 // OPENING MORE 1> Essentials END
