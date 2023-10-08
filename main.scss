@@ -112,7 +112,7 @@ header {
             position: absolute;
             left: 5.5em;
             bottom: 20px;
-            z-index: 10;
+            z-index: 5;
         }
 
         input {
@@ -164,6 +164,7 @@ header {
     border-right: solid 1px rgba(0, 0, 0, 0.521);
     transition: all 0.3s;
     font-size: 14px;
+
 
     .top {
         display: flex;
@@ -217,6 +218,7 @@ header {
         border-bottom: 1px solid gray;
         padding-top: 1em;
         padding-bottom: 1em;
+
 
         h3 {
             color: rgb(95, 99, 104);
@@ -320,6 +322,7 @@ header {
     display: flex;
     transition: all 0.3s;
     left: 0%;
+    z-index: 20;
 }
 
 // LAYER 1>
@@ -370,6 +373,7 @@ header {
 .essentials-page.active {
     left: 0;
     transition: all 0.2s;
+    z-index: 30;
 }
 
 // LAYER 2>
@@ -419,6 +423,7 @@ header {
 .design-page.active {
     left: 0;
     transition: all 0.2s;
+    z-index: 30;
 }
 
 // -------- MOBILE NAV END -------- //
