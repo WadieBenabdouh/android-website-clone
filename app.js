@@ -54,5 +54,4 @@ backBtn.onclick = () => {
     backBtn.classList.remove("active")
     closeBurgerBtn.classList.remove("active")
 }
-
 // OPENING MORE 1> Essentials END
