@@ -487,6 +487,7 @@ article {
 
 // --------ARTICLE ANDROID 14 END -------- // 
 
+
 // -------- ASIDE 3 TABS -------- //
 .three-tabs {
     display: flex;
@@ -554,3 +555,74 @@ article {
 }
 
 // -------- ASIDE 3 TABS END -------- //
+
+
+// -------- FEATURED TWO CARDS -------- //
+.two-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    margin-top: 1em;
+    gap: 5em;
+
+    .card {
+        background-color: #eff7cf;
+        padding: 1em 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+
+            a {
+                color: #000;
+                border: 2px solid rgb(48, 48, 48);
+                border-radius: 50px;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        img {
+            align-self: flex-end;
+            max-width: 10em;
+        }
+    }
+
+    .card-two {
+        background-color: #073042;
+        padding: 1em 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        color: #fff;
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+
+            a {
+                color: #fff;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        img {
+            align-self: flex-end;
+            max-width: 10em;
+        }
+    }
+}
+
+// -------- FEATURED TWO CARDS END -------- //
