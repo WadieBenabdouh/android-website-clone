@@ -149,6 +149,8 @@ header {
 
 }
 
+// -------- HEADER END -------- //
+
 // -------- MOBILE NAV -------- //
 .mobile-nav {
     flex-direction: column;
@@ -419,4 +421,123 @@ header {
     transition: all 0.2s;
 }
 
-// -------- MOBILE NAV END-------- //
+// -------- MOBILE NAV END -------- //
+
+
+// --------ARTICLE ANDROID 14 -------- // 
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    height: 25em;
+    justify-content: space-around;
+    background-image: url('/assets/main/android-14-background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        font-size: 2rem;
+        width: 55%;
+        text-align: center;
+        color: #fff;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1rem;
+        color: rgb(32, 33, 36);
+        line-height: 1.5em;
+        max-width: 90%;
+    }
+
+    label {
+        width: 100%;
+        position: relative;
+
+        .fa-magnifying-glass {
+            position: absolute;
+            top: 12px;
+            left: 13px;
+        }
+
+        input {
+            width: 100%;
+            padding: .5em 2.5em;
+            font-size: 1rem;
+            border: none;
+
+            &:hover {
+                background-color: #f3f3f3;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+// --------ARTICLE ANDROID 14 END -------- // 
+
+// -------- ASIDE 3 TABS -------- //
+.three-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    padding: 0 1.5em;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .tab {
+        display: flex;
+        align-items: center;
+        background-color: #d7effe;
+        padding: 1em;
+        gap: 2em;
+
+        img {
+            max-width: 3.5em;
+        }
+
+        .info {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+
+            button {
+                background: none;
+                border: none;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .tab-last {
+        display: flex;
+        align-items: center;
+        background-color: #d7effe;
+        padding: 1em;
+        gap: 2em;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+
+        img {
+            max-width: 3.5em;
+        }
+
+        .info {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+        }
+    }
+}
+
+// -------- ASIDE 3 TABS END -------- //
