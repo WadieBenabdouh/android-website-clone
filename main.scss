@@ -572,6 +572,12 @@ article {
         flex-direction: column;
         gap: 1em;
 
+        &:hover a {
+            background-color: #fff;
+            border: 2px solid #fff !important;
+            transition: all 0.4s;
+        }
+
         .details {
             display: flex;
             flex-direction: column;
@@ -601,6 +607,13 @@ article {
         flex-direction: column;
         gap: 1em;
         color: #fff;
+
+        &:hover a {
+            background-color: #fff;
+            border: 2px solid #fff !important;
+            color: #000 !important;
+            transition: all 0.4s;
+        }
 
         .details {
             display: flex;
