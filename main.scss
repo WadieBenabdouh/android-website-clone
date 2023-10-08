@@ -97,12 +97,12 @@ header {
         display: none;
 
         #closeSearchBtn {
-            background-color: #d5d7d8;
+            background-color: #f1f2f3;
             padding-inline: 10px;
             border-radius: 50px;
 
             &:hover {
-                background-color: gray;
+                background-color: #b6b2b2;
                 cursor: pointer;
             }
         }
@@ -227,6 +227,7 @@ header {
 
             &:hover {
                 background-color: #f1f3f4;
+                cursor: pointer;
             }
 
             p {
@@ -267,6 +268,7 @@ header {
 
             &:hover {
                 background-color: #f1f3f4;
+                cursor: pointer;
             }
 
             p {
@@ -358,6 +360,50 @@ header {
 .essentials-page.active {
     left: 0;
     transition: all 0.2s;
+}
+
+// LAYER 2>
+.design-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 65%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-right: solid 1px rgba(0, 0, 0, 0.521);
+    position: absolute;
+    top: 4em;
+    transition: all 0.3s;
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        // padding: 0 1.5em;
+        gap: 1em;
+        border-bottom: 1px solid gray;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        >* {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 1.5em;
+            width: 97%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #f1f3f4;
+            }
+
+            a {
+                color: #4b4b4b;
+            }
+        }
+    }
 }
 
 // -------- MOBILE NAV END-------- //
