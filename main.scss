@@ -691,6 +691,13 @@ article {
         background-color: #073042;
         color: #fff;
 
+        &:hover a {
+            color: #073042 !important;
+            background-color: #fff;
+            border: 2px solid #fff !important;
+            transition: all 0.4s;
+        }
+
         .details {
 
             a {
@@ -702,9 +709,6 @@ article {
                 padding: 10px;
                 font-size: 1rem;
 
-                &:hover {
-                    color: #073042;
-                }
             }
         }
     }
