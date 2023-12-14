@@ -73,3 +73,4 @@ backBtnTwo.onclick = () => {
     backBtnTwo.classList.remove("active")
     closeBurgerBtn.classList.remove("active")
 }
+
